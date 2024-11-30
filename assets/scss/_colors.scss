@@ -1,0 +1,31 @@
+$light-bg: #f3f3f3;
+$light-text: #1a1a1a;
+$light-secondary: #5a5a5a;
+$light-border: #d6d6d6;
+
+$dark-bg: #1e1e1e;
+$dark-text: #e6e6e6;
+$dark-secondary: #909090;
+$dark-border: #3c3c3c;
+
+//$primary-color: #0078d4;
+//$primary-hover: #005a9e;
+$primary-color: #6a5dea;
+$primary-hover: #5148b6;
+$border-radius: 6px;
+
+:root {
+  --background: $light-bg;
+  --text: $light-text;
+  --primary: $primary-color;
+  --secondary: $light-secondary;
+  --border: $light-border;
+}
+
+[data-theme="dark"] {
+  --background: $dark-bg;
+  --text: $dark-text;
+  --primary: $primary-color;
+  --secondary: $dark-secondary;
+  --border: $dark-border;
+}

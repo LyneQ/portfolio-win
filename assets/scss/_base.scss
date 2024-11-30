@@ -1,0 +1,107 @@
+@use "colors" as *;
+@import url('https://fonts.googleapis.com/css2?family=Allan:wght@400;700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
+
+
+body {
+  font-family: "Montserrat", serif;
+  font-optical-sizing: auto;
+
+  background-color: var(--background);
+  color: var(--text);
+}
+
+button,
+input[type="button"],
+input[type="submit"] {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: 500;
+  color: white;
+  background-color: $primary-color;
+  border: none;
+  border-radius: $border-radius;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.2s, box-shadow 0.2s, transform 0.1s ease-in-out;
+
+  &:hover {
+    background-color: $primary-hover;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);;
+    cursor: pointer;
+  }
+
+  &:active {
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  }
+
+  &:focus {
+    outline: 2px solid $primary-hover;
+    outline-offset: 2px;
+  }
+
+  &.alternate {
+    background-color: transparent;
+    color: var(--background);
+    border: 1px solid var(--secondary);
+
+    &:hover {
+      background-color: $primary-color;
+      color: var(--background);
+    }
+  }
+}
+
+a {
+  font-size: 16px;
+  font-weight: 500;
+  color: $primary-color;
+  text-decoration: none;
+  transition: color 0.2s;
+
+  &:hover {
+    color: lighten($primary-color, 10%);
+    text-decoration: underline;
+    cursor: pointer;
+  }
+
+  &:focus {
+    outline: 2px solid $primary-color;
+    outline-offset: 2px;
+  }
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Montserrat", serif;
+  color: var(--text);
+  margin: 0 0 10px;
+}
+
+h1 {
+  font-size: 2.5em;
+  font-weight: 700;
+}
+
+h2 {
+  font-size: 2em;
+  font-weight: 600;
+}
+
+h3 {
+  font-size: 1.75em;
+  font-weight: 500;
+}
+
+h4 {
+  font-size: 1.5em;
+  font-weight: 500;
+}
+
+h5 {
+  font-size: 1.25em;
+  font-weight: 400;
+}
+
+h6 {
+  font-size: 1em;
+  font-weight: 400;
+}
