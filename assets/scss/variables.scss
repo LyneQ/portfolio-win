@@ -1,0 +1,35 @@
+$light-bg: #a8a8a8;
+$light-text: #1a1a1a;
+$light-secondary: #5a5a5a;
+$light-border: #d6d6d6;
+$light-taskbar: #F8F8F8;
+
+
+$dark-bg: #1e1e1e;
+$dark-text: #e6e6e6;
+$dark-secondary: #909090;
+$dark-border: #3c3c3c;
+$dark-taskbar: #121212;
+
+$primary-color: #6a5dea;
+$primary-hover: #5148b6;
+$border-radius: 6px;
+
+
+
+:root {
+  --background: #{$light-bg};
+  --text: #{$light-text};
+  --primary: #{$primary-color};
+  --secondary: #{$light-secondary};
+  --border: #{$light-border};
+    --taskbar: #{$light-taskbar};
+}
+
+.dark-theme {
+  --background: #{$dark-bg};
+  --text: #{$dark-text};
+  --secondary: #{$dark-secondary};
+  --border: #{$dark-border};
+    --taskbar: #{$dark-taskbar};
+}

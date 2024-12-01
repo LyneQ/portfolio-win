@@ -6,7 +6,7 @@ useHead({
     { name: 'description', content: 'portfolio make my myself for yourself' }
   ],
   bodyAttrs: {
-    class: 'light-theme'
+    class: 'dark-theme'
   },
   script: [
     {
