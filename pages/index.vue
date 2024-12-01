@@ -8,7 +8,6 @@ export default defineComponent({
 
 <template>
   <ContentSelector name="index"/>
-
 </template>
 
 <style scoped lang="scss">
